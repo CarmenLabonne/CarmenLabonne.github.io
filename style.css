@@ -1,0 +1,806 @@
+@font-face {
+    font-family: 'savateitalique';
+    src: url('savate-italique-webfont.eot');
+    src: url('savate-italique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('savate-italique-webfont.woff2') format('woff2'),
+         url('savate-italique-webfont.woff') format('woff'),
+         url('savate-italique-webfont.ttf') format('truetype'),
+         url('savate-italique-webfont.svg#savateitalique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'savateregular';
+    src: url('savate-regular-webfont.eot');
+    src: url('savate-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('savate-regular-webfont.woff2') format('woff2'),
+         url('savate-regular-webfont.woff') format('woff'),
+         url('savate-regular-webfont.ttf') format('truetype'),
+         url('savate-regular-webfont.svg#savateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+
+body{
+    background-image: url(images/fond.png);
+    background-size: cover;
+    background-position: top; 
+    font-family: 'Bitter', serif;
+    overflow-x: hidden;
+    
+}
+
+.banner{
+
+    border-bottom: 2px solid #a61b28; 
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+
+
+.container{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+.banner-flex{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.slogan {
+    display: flex;
+    gap: 5px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #a61b28;
+
+}
+
+.slogan h3{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.slogan h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.enveloppe {
+    
+    width: 10%;
+    background-image: url(images/feuille\ slogan\ 3.png);
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.menu{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: #a61b28; 
+    border-bottom: 2px solid #a61b28; 
+
+}
+
+
+
+.container-menu{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    
+}
+
+.menu-flex{
+    display: flex;
+    gap: 50px ;  
+}
+
+.menu .gauche  {
+    width: 50% ;
+    display: flex;
+    align-items: center;
+    
+}
+
+.gauche img{
+    background-size: cover; 
+    background-position: center;  
+    max-width: 100%;   
+}
+
+.menu .droite  {
+    width: 50%    ;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+nav a{
+
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #a61b28;
+    transition: .5s;
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+  
+    
+}
+
+nav a.active, nav a:hover{
+    border-bottom: 2px solid #a61b28;
+    padding-bottom: 5px;
+ }
+
+.adresse h4{
+    font-style: italic;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 50px;
+    line-height: 25px;
+}
+
+.marquee-line { 
+    border-bottom: 2px solid #a61b28;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}  
+
+.marquee-line img{
+
+    width: 3%;
+    height: 3%;
+}
+
+.marquee-flex{
+display: flex;
+align-items: center;
+gap: 20px ;
+}   
+
+.marquee-flex p{
+    color: #a61b28;
+    text-align: center;
+
+    
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.fleur{
+
+    position: relative;
+    border-bottom: 2px solid #a61b28;
+}
+
+
+.fleur .gauche{
+    width: 25%;
+    position: absolute;
+    top: 100px;
+    bottom: 130px;
+    left: -10px;
+}
+
+
+.fleur .droite{
+    width: 25%;
+    position: absolute;
+    top: 100px;
+    bottom: 130px;
+    right: -10px;
+}
+
+.pre{
+    padding-top: 100px;
+    padding-bottom: 130px;
+    color: #a61b28;
+    text-align: center;
+}
+
+
+
+
+.pre h2{
+    font-family: 'savateregular';
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.pre p{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 30px;
+}
+
+
+/* cards */
+
+
+.cards {
+    padding-top: 100px;
+    padding-bottom: 130px;
+    text-align: center;
+    border-bottom: 2px solid #a61b28;
+  
+}
+
+
+.cards h2 {
+    font-family: 'savateregular';
+    margin-bottom: 100px;
+    font-weight: 500;
+    font-size: 45px;
+    color: #a61b28;
+    text-transform: uppercase;
+   
+
+}
+
+.cards h4 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #a61b28; 
+    text-transform: uppercase;
+    
+}
+
+
+
+.container-cards {
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+}
+
+.flex-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 4 - 20px);
+    border-bottom: 2px solid #a61b28;
+
+    
+}
+
+.cards .card .image {
+    background-size: cover;
+    background-position: center;
+    height: 200px ;
+
+}
+
+.cards .card .info{
+    padding: 20px 0px 20px;
+    
+}
+
+
+
+
+.cards .card .img-01 {
+    background-image: url(images/plat\ 1.jpg);
+}
+
+.cards .card .img-02 {
+    background-image: url(images/plat\ 3.jpg);
+}
+
+.cards .card .img-03 {
+    background-image: url(images/plat\ 4.jpg);
+}
+
+.cards .card .img-04 {
+    background-image: url(images/plat\ 5.jpg);
+}
+
+.cards .card .img-05 {
+    background-image: url(images/plat\ 6.jpg);
+}
+
+
+
+
+.boite {
+    padding-top: 100px;
+   
+}
+
+.reserver a {
+    font-family: 'savateregular';
+    color: #a61b28;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 2px solid #a61b28;
+    text-decoration: none;
+    padding: 20px 30px;
+    
+}
+
+.reserver a:hover {
+    background-color: #a61b28;;
+    color: rgb(255, 255, 255);
+}
+
+/* boutique */
+
+
+.boutique{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #a61b28;
+    border-bottom: 2px  solid #a61b28;
+
+}
+
+
+.boutiques{
+    display: flex;
+    gap: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.boutique h2{
+    font-family: 'savateregular';
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 45px;
+    text-transform: uppercase;   
+    line-height: 60px;
+}
+
+
+.boutique .gauche {
+    width: 50%;
+}
+
+.gauche p{
+    font-size: 18px;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.boutique .droite{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+.boutique img{
+    background-size: cover; 
+    background-position: center; 
+    max-width: 100%; 
+}
+
+.boutique .btn{
+    font-family: 'savateregular';
+    color: #a61b28;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 2px solid #a61b28;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+.boutique .btn:hover {
+    background-color: #a61b28;;
+    color: rgb(255, 255, 255);
+}
+
+
+/* horaire */
+
+
+.horaire{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #a61b28;
+    border-bottom: 2px  solid #a61b28;
+}
+
+
+.horaires{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.horaires h2{
+    font-family: 'savateregular';
+    margin-bottom: 40px;
+    font-weight: 500;
+
+    font-size: 45px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+
+.horaire .gauche {
+    width: 50%;
+}
+
+.horaire p{
+    font-size: 18px;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.horaire .droite{
+    width: 50%;
+    background-image: url(images/horaire.png);
+    background-size: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 400px ;
+}
+
+
+.horaire .btn{
+    font-family: 'savateregular';
+    color: #a61b28;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 2px solid #a61b28;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+.horaire .btn:hover {
+    background-color: #a61b28;;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.voiture {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.foodtruck {
+    position: absolute;
+    left: 100%;
+    /*top: 50%; */
+    width: 33vw;
+    animation: 4s camion forwards;
+    /*transform: translateY(-50%); */
+    bottom: -3px;
+    max-width: 500px;
+    min-width: 240px;
+}
+
+.foodtruck img{
+    max-width: 100%;
+    display: block;
+}
+
+.voiture .txt {
+    animation: 1s titresoustitre forwards;
+    animation-delay: 2s;
+    opacity: 0%;
+    color: #a61b28;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: end;
+    
+
+}
+
+.voiture h3{
+    font-family: 'savateregular';
+    text-transform: uppercase;
+    font-size: 40px;
+   
+}
+.voiture p{
+    font-family: 'savateitalique';
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+@keyframes camion {
+    0% { left: 100%;}
+    100% { left: 10%;}
+}
+
+@keyframes titresoustitre {
+    0% { opacity: 0%;}
+    100% { opacity: 100% ;}
+}
+
+
+
+.cta{
+    background:#a61b28;
+    padding-top : 20px;
+    padding-bottom: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+}
+
+.haut{
+    background-image: url(images/réseaux\ sociaux.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%; 
+    padding-bottom: 50px;
+    padding-top: 30px;
+
+}
+
+.container-cta {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta p {
+    font-family: 'savateregular';
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .pre h2{
+        font-size: 40px;
+    }
+
+
+    .cards h2 {
+        font-size: 40px;
+    }
+
+    .cards .card .image {
+        height: 140px ;   
+    }
+
+
+    .boutique h2{
+        font-size: 40px;
+    }
+
+    .horaires h2{
+        font-size: 40px;
+    }
+
+    .voiture {
+        padding-top: 150px;
+    
+    }
+
+    .voiture .txt {
+        max-width: 40%;
+    }
+    .voiture h3{
+        font-size: 35px;  
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    nav a{
+        font-size: 20px;   
+    }
+
+    .adresse h4{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .pre h2{
+        font-size: 35px;
+    }
+    
+    .pre p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .cards h2 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .boutique h2{
+        font-size: 30px;
+    }
+
+    .gauche p{
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+
+.horaires h2{
+ font-size: 35px;
+}
+
+.horaire p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
+.voiture .txt {
+    max-width: 40%;
+}
+.voiture h3{
+    font-size: 35px;  
+}
+
+.voiture p{
+    font-size: 16px;
+}
+
+}
+
+
+@media only screen and (max-width: 576px){
+
+
+    .menu{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .card{
+        width: 90%;
+    }
+
+    .cards .card .image {
+        height: 200px ;   
+    }
+
+
+    .boutiques{
+    gap: 30px;
+    }
+
+    .horaires{
+    gap: 30px;
+    }
+
+
+    
+
+    .pre h2{
+        font-size: 25px;
+    }
+    
+    .pre p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .cards h2 {
+        font-size: 25px;
+  
+    }
+
+    .boutique h2{
+        font-size: 25px;
+    }
+
+    .gauche p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+.horaires h2{
+ font-size: 25px;
+}
+
+.horaire p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.voiture .txt {
+    max-width: 40%;
+}
+.voiture h3{
+    font-size: 25px;  
+}
+
+.voiture p{
+    font-size: 14px;
+}
+
+
+nav a{
+    font-size: 15px;  
+    padding: 10px 20px;  
+}
+
+.reserver a {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.boutique .btn{
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.horaire .btn{
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.voiture {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+
+}
